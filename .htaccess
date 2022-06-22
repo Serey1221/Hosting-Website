@@ -1,3 +1,6 @@
+# This file .htaccess
+
+```htaccess
 RewriteEngine On
 
 # End the processing, if a rewrite already occurred
@@ -13,3 +16,4 @@ RewriteRule .* frontend/web/$0
 #RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_FILENAME} !-d
 #RewriteRule ^([^/]+/web)/.*$ $1/index.php:
+```
