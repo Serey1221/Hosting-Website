@@ -1,6 +1,6 @@
 # How to Deploy Node.js/Express.js Application on Ubuntu Server
 
-1. Connect with Server using SSH
+## 1. Connect with Server using SSH
 
 Step 1: Connect with remote Server using SSH
 Everything starts by connecting with a remote server. I use PuTTY to connect to the server using ssh.
@@ -11,7 +11,7 @@ ssh <user>@<ip-address>
 ssh root@123.45.67.890
 ```
 
-2. Installation of Node.js
+## 2. Installation of Node.js
 
 Ubuntu 20.04, By default, contains a version of node.js in the default repository.
 We only need to install it. By using APT, for that, refresh your local package index
@@ -54,7 +54,7 @@ Checking the version of node.js and npm
 node -v & npm -v
 ```
 
-3. Create a new Directory (if required) and initialize a new Node.js/Express.js Project
+## 3. Create a new Directory (if required) and initialize a new Node.js/Express.js Project
 
 ```sh
 mkdir nodeApplication
@@ -76,7 +76,7 @@ nano app.js
 #Add Folowing code
 ```
 
-```node
+```js
 const http = require("http");
 
 const server = http.createServer((req, res) => {
@@ -113,7 +113,7 @@ Now Run the application.
  node app.js
 ```
 
-4.  Install PM2 & Manage Application with It
+## 4. Install PM2 & Manage Application with It
 
 PM2 is a process manager for Node.js applications. It provides an easy way to manage and demonize applications (run them in the background as a service).
 
@@ -132,8 +132,9 @@ Execute the app.js command in the background by using the following command:
  netstat -plant
 ```
 
-5. Setup Nginx as a reverse proxy server
-   As our application is working fine at localhost now we need to setup Nginx as a reverse proxy server so that it is accessible for the users.
+## 5. Setup Nginx as a reverse proxy server
+
+As our application is working fine at localhost now we need to setup Nginx as a reverse proxy server so that it is accessible for the users.
 
 Run the command to edit the following file:
 
@@ -169,8 +170,10 @@ sudo systemctl restart nginx
 You should now be able to access your application via
 the Nginx reverse proxy by accessing your server’s URL.
 
-------------------------------------------------------
-# Please watch this video
+---
+
+# Please click link below to watch video
+
 [How to Deploy a Node.js App on Ubuntu with PM2, NGINX and Cloudflare](https://www.youtube.com/watch?v=9FvgyWDsViA)
 
 Congrats 👏
