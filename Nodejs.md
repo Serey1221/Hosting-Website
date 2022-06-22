@@ -168,3 +168,9 @@ sudo systemctl restart nginx
 
 You should now be able to access your application via
 the Nginx reverse proxy by accessing your server’s URL.
+
+------------------------------------------------------
+# Please watch this video
+[How to Deploy a Node.js App on Ubuntu with PM2, NGINX and Cloudflare](https://www.youtube.com/watch?v=9FvgyWDsViA)
+
+Congrats 👏
