@@ -207,7 +207,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'laraveluser'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 
-    Configuring Nginx
+Configuring Nginx
 
 ```
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/serey03.prointix.com
