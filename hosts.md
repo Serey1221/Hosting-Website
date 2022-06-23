@@ -1,4 +1,5 @@
-#
+# Hosting IP Adress
+```
 127.0.0.1 localhost
 ::1 localhost
 127.0.0.1 tonec.com
@@ -11,3 +12,6 @@
 	127.0.0.1 secure.internetdownloadmanager.com
 	127.0.0.1 mirror.internetdownloadmanager.com
 	127.0.0.1 mirror2.internetdownloadmanager.com
+    
+
+```
